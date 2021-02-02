@@ -11,6 +11,8 @@
 
     <h1>Exo 6 sur les formulaire</h1>
 
+
+
     <label>Là où je dois écrire : </label><input type="text" name="anto" id="text1"><br>
     <label for="">Là où ça copie : </label><input type="text" id="text2"><br>
     <label for="">Choisi un pays : </label><select name="" id="test">
@@ -19,6 +21,34 @@
         <option value="Espagne">Espagne</option>
     </select><br>
     <label for="">La capitale est : </label><span id="capital"></span>
+    <h1>Questionnire de bg</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>Quelle est ma nourriture pref</td>
+                <td><select name="nourriture" id="q1">
+                        <option value="pate">Des Pâtes</option>
+                        <option value="riz">Du Riz</option>
+                        <option value="tout">Tout est très bon 😁</option>
+                    </select></td>
+                <td id="reponse1"></td>
+            </tr>
+            <tr>
+                <td>Combien y a t-il de planètes dans le système solaire</td>
+                <td><input type="text" name="planete" id="q2"></td>
+                <td id="reponse2"></td>
+            </tr>
+            <tr>
+                <td>Es-tu abbonné à mon compte insta (sinon vasy)</td>
+                <td><input type="radio" name="compte" value="oui">oui <input type="radio" name="compte" value="non">non</td>
+                <td id="reponse3"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Envoyer" id="boutton"></td>
+            </tr>
+        </table>
+        <span id="resultat"></span>
+    </form>
 
     <script src="./exo6.js"></script>
 
